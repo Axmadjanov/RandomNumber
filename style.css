@@ -6,6 +6,8 @@
   box-sizing: border-box;
   font-family: "Supermercado One", cursive;
 }
+body{background-color:#b2b2b2;
+}
 .container{
   background-color:#b2b2b2;
   height:100vh;
