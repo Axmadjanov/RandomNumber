@@ -1,4 +1,5 @@
 const randomNum = document.querySelector(".randomNum1")
+const container= document.querySelector(".container")
 const checkButton = document.querySelector(".checkButton")
 const number = document.querySelector(".number")
 const Guessing = document.querySelector(".guessing")
@@ -11,6 +12,7 @@ randomNum.textContent=Math.floor(Math.random() * 10)
 checkButton.addEventListener("click",()=>{
     if(number.value === randomNum.textContent){
          Guessing.textContent="Corret number";
+container.style.background="yellowgreen"
     }
     if( number.value > randomNum.textContent ){
             Guessing.textContent="Too high";

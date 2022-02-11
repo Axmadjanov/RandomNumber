@@ -7,7 +7,6 @@
   font-family: "Supermercado One", cursive;
 }
 .container{
-  background-color:#b2b2b2;
   height:100vh;
   color:#555;
 }
@@ -18,7 +17,7 @@
 }
 .randomNum {
   margin-top: 60px;
-  color:#b2b2b2;
+  color:#fff;
   text-align: center;
 }
 .randomNum span {
@@ -26,7 +25,7 @@
   padding: 10px 35px;
   font-size: 70px;
   z-index:999;
-  background-color: #555;
+  background-color:#b2b2b2;
 }
 .resultContainer {
   padding: 70px 0;
@@ -36,7 +35,7 @@
 .number {
   border-radius:8px;
   background-color:#b2b2b2;
-  color:#555;
+  color:#fff;
   font-size: 50px;
   padding: 10px;
   width: 140px;
@@ -44,12 +43,11 @@
 .buttonCheck {
   grid-column-start: 1;
   grid-column-end: 3;
-  
   text-align: center;
 }
 .buttonCheck button {
    background-color:#b2b2b2;
-  color:#555;
+  color:#fff;
   cursor: pointer;
   border-radius: 8px;
   font-size: 20px;
