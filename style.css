@@ -87,21 +87,48 @@ a {
   margin: 0 7px 7px 0;
   padding: 7px;
 }
+.static {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.student-container {
+  margin: 0 20px;
+}
+.bodyPart {
+  padding: 0 20px;
+  text-align: center;
+}
 /* Cards */
 /* Navbar */
 .navbar {
   background: #03bfcb;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
 }
+.otherPages1 {
+  width: 40%;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
 .top {
   width: 100%;
-  padding: 5px 0;
+  padding: 15px 0;
+}
+.leftCotainer {
+  display: none;
+}
+.bar {
+  display: none;
 }
 
 .logo {
+  margin-left: 25px;
   font-size: 20px;
   color: #fff;
 }
@@ -170,7 +197,7 @@ h3 {
 .box {
   width: 340px;
   height: 190px;
-  margin: 10px 15px;
+  margin: 20px 15px;
   cursor: pointer;
   background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(3.5px);
@@ -324,6 +351,7 @@ h3 {
     padding: 10px 0;
   }
   .bar {
+    display: block;
     position: relative;
     right: 45px;
     cursor: pointer;
@@ -331,15 +359,20 @@ h3 {
   .logo {
     position: relative;
     left: 45px;
+    margin: 0;
     font-size: 25px;
     color: #fff;
   }
   /* Navbar */
   /* LeftNavbar */
   .leftNavbar {
+    display: block;
     background: #334041;
     height: 100%;
     width: 70%;
+  }
+  .otherPages1 {
+    display: none;
   }
   .leftNavbar .top {
     padding: 10px 60px;
@@ -429,6 +462,10 @@ h3 {
   .bodyPart {
     padding: 0 20px;
     text-align: center;
+  }
+  .static {
+    display: flex;
+    flex-direction: column;
   }
   .student-container {
     margin: 15px 0;
