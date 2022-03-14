@@ -486,6 +486,35 @@ h3 {
     object-fit: fill;
     width: 100%;
     height: auto;
+    border-radius: 15px;
+  }
+  .time {
+    display: flex;
+  }
+  .historyFaculty {
+    padding: 0 20px;
   }
   /* Dekanat */
+  /* Footer */
+  .footer {
+    padding: 0 20px;
+    color: #fff;
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+    background-color: #475455;
+  }
+  .social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social strong {
+    margin-left: -30px;
+  }
+  .social i {
+    font-size: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  /* Footer */
 }
