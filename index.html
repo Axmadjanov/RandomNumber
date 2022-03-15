@@ -83,7 +83,7 @@
     </div>
     <!-- Body Part -->
 
-     <div class="imageSlider">
+     <!-- <div class="imageSlider"> -->
        <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -93,9 +93,9 @@
        <img src="./images/namqi2.jpg" alt="">
         </div>
       </div>
-    <div class="swiper-pagination"></div>
+       <div class="swiper-pagination"></div>
     </div>
-     </div>
+     <!-- </div> -->
 
 
     <!-- Students -->
@@ -209,13 +209,22 @@
   <script src="./script.js"></script>
   <script src="./swiper-bundle.min.js"></script>
    <script>
-     let swiper = new Swiper(".mySwiper", {
-  spaceBetween: 25,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+      let swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
     </script>
   <script src="https://kit.fontawesome.com/a89a29594f.js" crossorigin="anonymous"></script>
 </html>
