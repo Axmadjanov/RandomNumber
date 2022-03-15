@@ -25,4 +25,4 @@ counters.forEach((counter) => {
   };
   updateCounter();
 });
-
+// Swiper
