@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iqtisodiyot va Boshqaruv</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+    <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    /> -->
 
   </head>
   <body>
@@ -77,6 +82,22 @@
       </p>
     </div>
     <!-- Body Part -->
+
+     <div class="imageSlider">
+       <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+       <img src="./images/namqi1.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+       <img src="./images/namqi2.jpg" alt="">
+        </div>
+      </div>
+    <div class="swiper-pagination"></div>
+    </div>
+     </div>
+
+
     <!-- Students -->
     <br />
     <div class="static">
@@ -184,7 +205,17 @@
 
     <!-- Footer -->
   </body>
+  
   <script src="./script.js"></script>
   <script src="./swiper-bundle.min.js"></script>
+   <script>
+     let swiper = new Swiper(".mySwiper", {
+  spaceBetween: 25,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+    </script>
   <script src="https://kit.fontawesome.com/a89a29594f.js" crossorigin="anonymous"></script>
 </html>
