@@ -20,7 +20,7 @@ counters.forEach((counter) => {
     const increment = target / 200;
     if (c < target) {
       counter.innerHTML = `${Math.ceil(c + increment)}`;
-      setTimeout(updateCounter, 1.5);
+      setTimeout(updateCounter, 2.5);
     }
   };
   updateCounter();

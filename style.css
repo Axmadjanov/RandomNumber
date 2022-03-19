@@ -13,6 +13,9 @@ li {
 a {
   text-decoration: none;
 }
+.historyFaculty {
+  padding: 0 30px;
+}
 .imageSlider {
   position: relative;
 }
@@ -130,6 +133,16 @@ a {
 .student-container {
   margin: 0 20px;
 }
+.student-container p {
+  font-size: 25px;
+}
+.student-container img {
+  width: 200px;
+}
+.counter {
+  font-size: 30px;
+  font-weight: 1000;
+}
 .bodyPart {
   padding: 0 20px;
   text-align: center;
@@ -137,13 +150,16 @@ a {
 /* Cards */
 /* Navbar */
 .navbar {
-  background: #03bfcb;
+  background: #334041;
   z-index: 1000;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
 }
+/* .otherPages li a {
+  color: #fff;
+} */
 .otherPages1 {
   width: 40%;
   position: absolute;
@@ -151,6 +167,9 @@ a {
   right: 0;
   display: flex;
   justify-content: space-evenly;
+}
+.otherPages1 a {
+  color: #fff;
 }
 .top {
   width: 100%;
@@ -285,6 +304,66 @@ h3 {
   font-size: 13px;
 }
 /* Oqituvchilar */
+/* Footer  */
+.footer {
+  width: 100%;
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+}
+.footer1 {
+  width: 50%;
+}
+.footer2 {
+  width: 50%;
+}
+.social i {
+  font-size: 50px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.fa-telegram {
+  color: rgb(0, 195, 255);
+}
+.fa-facebook-square {
+  color: rgb(83, 83, 241);
+}
+.fa-instagram {
+  color: rgb(255, 43, 202);
+}
+.number {
+  color: rgb(30, 207, 30);
+}
+.copyright {
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Footer  */
+/* Kafedriya */
+.kafedriya {
+  padding: 0 30px;
+}
+h2 {
+  text-align: center;
+}
+.first {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+}
+.first img {
+  border-radius: 30px;
+  width: 40%;
+}
+.first1 {
+  text-align: center;
+  padding: 0 30px;
+  width: 60%;
+}
+/* Kafedriya */
 @media only screen and (max-width: 850px) {
   * {
     padding: 0;
@@ -517,15 +596,29 @@ h3 {
     font-size: 35px;
   }
   /* BodyPart */
+  /* Kafedriya */
   .kafedriya {
-    padding: 0 20px;
+    padding: 0 30px;
   }
-  .kafedriya img {
-    object-fit: cover;
+  h2 {
+    text-align: center;
+  }
+  .first {
     width: 100%;
-    height: 250px;
-    border-radius: 15px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
   }
+  .first img {
+    border-radius: 20px;
+    width: 100%;
+  }
+  .first1 {
+    text-align: center;
+    padding: 0 10px;
+    width: 100%;
+  }
+  /* Kafedriya */
   /* Dekanat */
   .dekanat {
     padding: 0 20px;
@@ -544,32 +637,23 @@ h3 {
   }
   /* Dekanat */
   /* Footer */
-  .footer {
-    color: #fff;
-    padding: 0 20px;
-    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
-    background: #334041;
-  }
-  .namqi {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 10px 0;
-  }
 
-  .namqi img {
-    margin: 10px 0;
-    object-fit: cover;
-    border-radius: 48%;
-    width: 85px;
-    height: 65px;
+  .footer {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer1 {
+    width: 100%;
+  }
+  .footer2 {
+    width: 100%;
   }
   .social {
     width: 100%;
     margin: 10px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .social strong {
     margin-left: -30px;
